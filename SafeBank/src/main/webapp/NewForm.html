@@ -2,11 +2,51 @@
 <html>
 <head>
 <title>Bank Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+	body
+		{
+			overflow:hidden;
+		}
+ 	#id1{	
+ 			margin-top: 40px;
+ 			margin-left: 150px;
+            color:Orange;
+            font-size:60px;
+            
+        }
+   #id2{	
+            color: navy;
+            text-align: center;
+        }
+    .custom-label {
+        font-size: 30px; /* Increase font size by 10px (default is usually 16px) */
+    }
+    .custom-input {
+        padding: 20px; /* Increase the padding inside the input box */
+        font-size: 22px; /* Increase font size by 10px */
+    }
+    .NewRegister
+    {
+    	background:green;
+    	color:white;
+    	padding:10px 10px;
+    	font-size:25px;
+    	border-radius:15px;
+    	
+    }
+    form
+    {
+    	margin-bottom:25%;
+    	margin-right:25%;
+    }
+</style>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-
+<!--  
 <form action="Formjsp.jsp" method="post">
 Username:<input type="text" name="f1"/>
 Password:<input type="password" name="f2"/>
@@ -14,6 +54,50 @@ Password:<input type="password" name="f2"/>
 <input type="reset" value="Clear"/><br><br>
 <a href="reg.html">Click Here,New Registration</a>
 </form>
+-->
+<h1 id="id1"><i>SafeBank</i></h1>	
+<h1 id="id2">Login Page</h1><br><br><br>
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="Images/Loginbank1.jpg"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        
+          <form action="Formjsp.jsp" method="post">
+          <br>
+          <br>
+          <br>
+          <!-- Email input -->
+          <div data-mdb-input-init class="form-outline mb-3">
+		    <label for="uname" class="custom-label">Username:</label>
+		    <input type="text" name="f1" id="uname" class="form-control form-control-lg custom-input" placeholder="Enter a valid Username" />
+		</div>
+
+          <!-- Password input -->
+          <div data-mdb-input-init class="form-outline mb-3">
+            <label for="pass" class="custom-label">Password: </label>
+            <input type="text"  name="f2" id="pass" class="form-control form-control-lg custom-input" placeholder="Enter password" />
+          </div>
+
+          
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button  type="submit" name="btn" id="btn" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;margin-right:150px;">Login</button>
+              <button  type="reset" name="btn" id="btn" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Clear</button>
+              <br><br><br>
+              <a href="reg.html"><button class="NewRegister" type="button" >Click Here,New Registration</button><a>
+              
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div> 
+</section>
 
 </body>
 </html>
